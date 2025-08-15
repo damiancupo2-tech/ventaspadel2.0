@@ -23,7 +23,8 @@ import {
   Cloud,
   Database,
   Settings,
-  RefreshCw
+  RefreshCw,
+  X // ✅ Import agregado
 } from 'lucide-react';
 import { useStore } from '../store/useStore';
 import { 
@@ -41,7 +42,6 @@ import {
 import { CarnetSocio, CarnetFilter, CarnetStats, ImportResult, CarnetFormData } from '../types/carnets';
 import CarnetDialog from '../components/CarnetDialog';
 import CarnetDetailModal from '../components/CarnetDetailModal';
-
 const Carnets: React.FC = () => {
   const { isAdmin } = useStore();
   const [carnets, setCarnets] = useState<CarnetSocio[]>([]);
